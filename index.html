@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Volta aos escritórios - Grupo FCamara</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/485b2411dd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="https://www.fcamara.com.br/"><img src="/assets/images/logo3.png" alt="logo Grupo FCamara"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#" id="a-return-about">Sobre a volta</a></li>
+                    <li><a href="#" id="a-protection">Cuidados</a></li>
+                    <li><a href="#" id="a-scheduling">Agendamento</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Saudades do escritório?</h1>
+            <p>Com muito cuidado e segurança estamos planejando a reabertura da nossa empresa.</p>
+            <a href="#" id="a-tellme-more" class="hero-btn">Conte-me mais</a>
+        </div>
+    </section>
+
+    <section class="return-about" id="return-about">
+        <h2>É isso aí, Orange Juice. Estamos voltando!</h2>
+        <p>
+           Depois de quase 2 anos de home office, finalmente estamos perto de voltar aos escritórios!
+        </p>
+
+        <div class="row">
+            <div class="infos">
+                <h3>Locais e Horários</h3>
+                <p> 
+                    Nosso escritório principal em São Paulo e a filial em Santos voltarão a ficar abertos das 8h às 18h.
+                </p>
+                <img src="/assets/images/time.png" alt="">
+
+                    
+            </div>
+            <div class="infos">
+                <h3>Agendamento</h3>
+                <p> 
+                    O retorno só será possível através de um sistema de agendamento.
+                </p>
+                <img src="/assets/images/computer.png" alt="">
+
+                    
+            </div>
+            <div class="infos">
+                <h3>Você escolhe</h3>
+                <p>Você poderá optar qual escritório ir, além de escolher data e também a estação de trabalho demarcada com um número.</p>
+                <img src="/assets/images/agenda.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="protection" id="protection">
+        <h2>Cuidados</h2>
+        <p>Estamos muito felizes com a volta aos escritórios. Mas ainda precisamos tomar alguns cuidados.</p>
+        
+        <div class="row-safe">
+            <div class="safe">
+                <ul>
+                    <li>Será medida a temperatura ao chegar no escritório.</li>
+                    <li>O uso de máscaras é obrigatório dentro das acomodações dos escritórios.</li>
+                    <li>Exitem adesivos nas mesas sinalizando onde podem sentar, para que haja o distanciamento necessário.</li>
+                    <li>Sentindo algum sintoma? A indicação é para que permaneça em casa!</li>
+                    <li>Os escritórios só podem comportar até 40% dos consultores.</li>
+                </ul>
+            </div>
+                <img src="/assets/images/covid.png" alt="covid" class="img-virus">
+            </div>
+    </section>
+
+    <section class="scheduling" id="scheduling">
+        <h2>Agendamento</h2>
+        <p>Se deseja voltar aos escritórios, basta agendar uma data abaixo.</p>
+        <span>
+            <img class="alert-icon" src="/assets/images/alerta.png" alt="Alerta">
+            A volta aos escritórios é totalmente opcional!
+        </span>
+
+        <div class="form">
+            <form>
+                <select required class="local" id="office">
+                    <option value="" disabled selected>Selecione a unidade</option>
+                    <option>São Paulo</option>
+                    <option>Santos</option>
+                </select>
+
+                <select required class="work-station" id="work-station">
+                    <option value="" disabled selected>Selecione a estação de trabalho</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+
+                <input type="date" id="data">
+            </form>
+            <button type="submit" onclick="scheduling()">Agendar</button>
+        </div>
+        <p id="scheduling-info"></p>
+    </section>
+
+    <section class="footer">
+        <footer>
+            <h3>Dúvidas?</h3>
+            <p>Envie um e-mail para contato@fcamara.com.br ou ligue para (11) 3158-1047.</p>
+            <div class="social-networks">
+                <a href="https://www.instagram.com/grupo.fcamara/" target="_blank"><img src="/assets/images/instagram.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/grupo.fcamara/" target="_blank"><img src="/assets/images/facebook.png" alt="Facebook"></a>
+                <a href="https://www.linkedin.com/company/grupofcamara/" target="_blank"><img src="/assets/images/linkedin.png" alt="Linkedin"></a>
+                <a href="https://www.youtube.com/channel/UCHsQ04xha1YKv48dSzQFlpw" target="_blank"><img src="/assets/images/youtube.png" alt="Youtube"></a>
+            </div>
+        </footer>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
